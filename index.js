@@ -94,7 +94,9 @@ import QuestionRoutes from "./Kanbas/Questions/routes.js";
 
 const CONNECTION_STRING =
     process.env.MONGO_CONNECTION_STRING ||
-    "mongodb://127.0.0.1:27017/kanbas";
+    "mongodb://localhost:27017/kanbas";
+    // "mongodb://127.0.0.1:27017/kanbas";
+    
 
 mongoose.connect(CONNECTION_STRING);
 
